@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using DevFreela.Payments.API.Models;
 using System.Threading.Tasks;
 
 namespace DevFreela.Payments.API.Services
 {
-    public interface IPaymentService
+    public interface IPaymentServicePay
     {
+        Task<bool> ProcessPay(PaymentInfoInputModel paymentInfoInputModel);
     }
 }
